@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+
+<actions>
+  <toggle_action>
+    <checkitem id='drawspaces' value='true'>
+      <acckey>&lt;___&gt;U</acckey>
+      <desc_j>空白文字の表示</desc_j>
+      <desc_e>Show spaces</desc_e>
+      <proc>Proc.new{ |ag, action| _drawspaces(ag, action)}</proc>
+      <stockid>''</stockid>
+    </checkitem>
+    <checkitem id='blockmatch' value='true'>
+      <acckey>&lt;___&gt;B</acckey>
+      <desc_j>endブロック範囲の表示</desc_j>
+      <desc_e>Show end-blocks</desc_e>
+      <proc>Proc.new{ |ag, action| _blockmatch(ag, action)}</proc>
+      <stockid>''</stockid>
+    </checkitem>
+    <checkitem id='errorjp' value='true'>
+      <acckey>&lt;___&gt;J</acckey>
+      <desc_j>日本語エラーメッセージの補助出力</desc_j>
+      <desc_e>''</desc_e>
+      <proc>Proc.new{ }</proc>
+      <stockid>''</stockid>
+    </checkitem>
+  </toggle_action>
+</actions>

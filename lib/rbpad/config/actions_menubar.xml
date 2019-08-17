@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+
+<actions>
+
+  <menubar_action>
+
+    <!--
+      ================================================================
+      ファイルメニュー
+      ================================================================
+    -->
+    <branch   id="file"        desc_j="ファイル(_F)"
+                               desc_e="File(_F)" />
+
+    <menuitem id="run"         desc_j="プログラム実行"
+                               desc_e="Run"
+                               acckey="&lt;___&gt;R"
+                               proc="Proc.new{ _exec }" />
+
+    <menuitem id="kill"        desc_j="プログラム停止"
+                               desc_e="Terminate"
+                               acckey="&lt;___&gt;T"
+                               proc="Proc.new{ _kill }" />
+
+    <menuitem id="info"        desc_j="プロパティ"
+                               desc_e="Property"
+                               acckey="&lt;___&gt;I"
+                               proc="Proc.new{ _info }" />
+
+    <menuitem id="new"         desc_j="新規作成"
+                               desc_e="New"
+                               acckey="&lt;___&gt;N"
+                               proc="Proc.new{ _new }" />
+
+    <menuitem id="open"        desc_j="開く..."
+                               desc_e="Open..."
+                               acckey="&lt;___&gt;O"
+                               proc="Proc.new{ _open }" />
+
+    <menuitem id="save"        desc_j="上書き保存"
+                               desc_e="Save"
+                               acckey="&lt;___&gt;S"
+                               proc="Proc.new{ _save }" />
+
+    <menuitem id="saveas"      desc_j="別名で保存..."
+                               desc_e="Save as..."
+                               acckey="&lt;shift&gt;&lt;___&gt;S"
+                               proc="Proc.new{ _save_as }" />
+
+    <menuitem id="close"       desc_j="閉じる"
+                               desc_e="Close"
+                               acckey="&lt;___&gt;W"
+                               proc="Proc.new{ _close }" />
+
+    <menuitem id="exit"        desc_j="終了"
+                               desc_e="Exit"
+                               acckey="&lt;___&gt;Q"
+                               proc="Proc.new{ _close_page_all }" />
+
+
+    <!--
+      ================================================================
+      編集メニュー
+      ================================================================
+    -->
+    <branch   id="edit"        desc_j="編集(_E)"
+                               desc_e="Edit(_E)" />
+
+    <menuitem id="undo"        desc_j="元に戻す"
+                               desc_e="Undo"
+                               acckey="&lt;___&gt;Z"
+                               proc="Proc.new{ _undo }" />
+
+    <menuitem id="redo"        desc_j="やり直し"
+                               desc_e="Redo"
+                               acckey="&lt;___&gt;Y"
+                               proc="Proc.new{ _redo }" />
+
+    <menuitem id="cut"         desc_j="切り取り"
+                               desc_e="Cut"
+                               acckey="&lt;___&gt;X"
+                               proc="Proc.new{ _cut }" />
+
+    <menuitem id="copy"        desc_j="コピー"
+                               desc_e="Copy"
+                               acckey="&lt;___&gt;C"
+                               proc="Proc.new{ _copy }" />
+
+    <menuitem id="paste"       desc_j="貼り付け"
+                               desc_e="Paste"
+                               acckey="&lt;___&gt;V"
+                               proc="Proc.new{ _paste }" />
+
+    <menuitem id="select_all"  desc_j="すべて選択"
+                               desc_e="Select all"
+                               acckey="&lt;___&gt;A"
+                               proc="Proc.new{ _select_all }" />
+
+    <menuitem id="clear"       desc_j="実行結果クリア"
+                               desc_e="Clear output"
+                               acckey="&lt;___&gt;L"
+                               proc="Proc.new{ _clear_output }" />
+
+    <!--
+      ================================================================
+      オプションメニュー
+      ================================================================
+    -->
+    <branch   id="option"      desc_j="オプション(_O)"
+                               desc_e="Option(_O)" />
+
+
+    <!--
+      ================================================================
+      テンプレートメニュー
+      ================================================================
+    -->
+    <branch   id="template"    desc_j="テンプレート(_T)"
+                               desc_e="Template(_T)" />
+
+    <!--
+      ================================================================
+      ヘルプメニュー
+      ================================================================
+    -->
+    <branch   id="help"        desc_j="ヘルプ(_H)"
+                               desc_e="Help(_H)" />
+
+    <uri id="ref_ruby"         desc_j="Rubyリファレンスマニュアル..."
+                               desc_e="Ruby reference manual..."
+                               acckey=""
+                               proc_j="Proc.new{ _startcmd('https://docs.ruby-lang.org/ja') }"
+                               proc_e="Proc.new{ _startcmd('https://docs.ruby-lang.org/en') }" />
+
+    <uri id="ref_gosu"         desc_j="Gosuチュートリアル..."
+                               desc_e="Gosu tutorial..."
+                               acckey=""
+                               proc_j="Proc.new{ _startcmd('https://gist.github.com/myokoym/7148859#file-gosu-ruby-tutorial-japanese-md') }"
+                               proc_e="Proc.new{ _startcmd('https://github.com/gosu/gosu/wiki/ruby-tutorial') }" />
+
+    <uri id="ref_dxruby"       desc_j="DXRubyリファレンス..."
+                               desc_e="DXRuby reference (Japanese)..."
+                               acckey=""
+                               proc_j="Proc.new{ _startcmd('http://mirichi.github.io/dxruby-doc/index.html') }"
+                               proc_e="Proc.new{ _startcmd('http://mirichi.github.io/dxruby-doc/index.html') }" />
+
+    <uri id="ref_nyle"         desc_j="Nyleリファレンス..."
+                               desc_e="Nyle reference..."
+                               acckey=""
+                               proc_j="Proc.new{ _startcmd('https://github.com/spoolkitamura/nyle-doc-jp/wiki') }"
+                               proc_e="Proc.new{ _startcmd('https://github.com/spoolkitamura/nyle-doc-en/wiki') }" />
+
+    <uri id="ref_rbpad"        desc_j="rbpadヘルプ..."
+                               desc_e="rbpad help..."
+                               acckey=""
+                               proc_j="Proc.new{ _startcmd('https://github.com/spoolkitamura/rbpad3-doc-jp/wiki') }"
+                               proc_e="Proc.new{ _startcmd('https://github.com/spoolkitamura/rbpad3-doc-en/wiki') }" />
+
+    <menuitem id="ruby_ver"    desc_j="Rubyバージョン"
+                               desc_e="Ruby version"
+                               acckey=""
+                               proc="Proc.new{ _ruby_ver }" />
+
+  </menubar_action>
+
+</actions>

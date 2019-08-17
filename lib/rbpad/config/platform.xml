@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+
+<platform>
+
+  <command id='browse'>
+    <win>start</win>
+    <mac>open</mac>
+    <linux>xdg-open</linux>
+  </command>
+
+  <font id='page'>
+    <win>MS Gothic 12</win>
+    <mac>monospace 16</mac>
+    <linux>monospace 12</linux>
+  </font>
+
+  <font id='output'>
+    <win>MS Gothic 12</win>
+    <mac>monospace 16</mac>
+    <linux>monospace 12</linux>
+  </font>
+
+  <font id='input'>
+    <win>MS Gothic 11</win>
+    <mac>monospace 14.5</mac>
+    <linux>monospace 11</linux>
+  </font>
+
+  <font id='find'>
+    <win>MS Gothic 10</win>
+    <mac>monospace 13</mac>
+    <linux>monospace 10</linux>
+  </font>
+
+  <font id='status'>
+    <win>MS Gothic 9</win>
+    <mac>monospace 11.5</mac>
+    <linux>monospace 9</linux>
+  </font>
+
+</platform>

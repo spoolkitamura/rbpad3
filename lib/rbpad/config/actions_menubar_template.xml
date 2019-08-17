@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+
+<actions>
+<menubar_action>
+
+<template id="gosu1" desc_j="Gosuテンプレート (クラス)"
+                     desc_e="Gosu Template (Class)"
+                     acckey=""
+                     valid="t">
+require 'gosu'
+
+class Screen &lt; Gosu::Window
+  def initialize
+    super 640, 480, false
+    self.caption = 'Gosu'
+  end
+
+  def draw
+  end
+
+  def update
+    close if Gosu.button_down?(Gosu::KB_ESCAPE)
+  end
+end
+
+screen = Screen.new
+screen.show
+
+</template>
+
+<template id="dxruby1" desc_j="DXRubyテンプレート"
+                       desc_e="DXRuby Template"
+                       acckey=""
+                       valid="t">
+require 'dxruby'
+
+Window.caption = 'DXRuby Application'
+Window.width   = 640
+Window.height  = 480
+Window.bgcolor = C_BLACK
+Window.x       = 260
+Window.y       = 240
+
+Window.loop do
+  break if Input.key_release?(K_ESCAPE)
+end
+
+</template>
+
+<template id="dxruby2" desc_j="DXRubyテンプレート (クラス)"
+                       desc_e="DXRuby Template (Class)"
+                       acckey=""
+                       valid="t">
+require 'dxruby'
+
+class Screen
+  def initialize
+    Window.caption = 'DXRuby Application'
+    Window.width   = 640
+    Window.height  = 480
+    Window.bgcolor = C_BLACK
+    Window.x       = 260
+    Window.y       = 240
+  end
+
+  def draw
+    Window.loop do
+      break if Input.key_release?(K_ESCAPE)
+    end
+  end
+end
+
+screen = Screen.new
+screen.draw
+
+</template>
+
+<template id="nyle1" desc_j="Nyleテンプレート"
+                     desc_e="Nyle Template"
+                     acckey=""
+                     valid="t">
+require 'nyle'
+
+screen = Nyle.create_screen(640, 480, {bgcolor: :BLACK})
+
+def screen.setup
+end
+
+def screen.draw
+end
+
+def screen.update
+  Nyle.quit if Nyle.key_release?(:ESCAPE)
+end
+
+screen.start
+
+</template>
+
+<template id="nyle2" desc_j="Nyleテンプレート (クラス)"
+                     desc_e="Nyle Template (Class)"
+                     acckey=""
+                     valid="t">
+require 'nyle'
+
+class Screen &lt; Nyle::Screen
+  def initialize
+    super(640, 480, {bgcolor: :BLACK})
+  end
+
+  def draw
+  end
+
+  def update
+    Nyle.quit if Nyle.key_release?(:ESCAPE)
+  end
+end
+
+screen = Screen.new
+screen.show_all
+Nyle.main
+
+</template>
+
+</menubar_action>
+</actions>

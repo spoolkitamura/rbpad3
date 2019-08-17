@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<ui>
+  <menubar name='MenuBar'>
+    <menu action='file'>
+      <menuitem action='run'        lang='ej' />
+      <menuitem action='kill'       lang='ej' />
+      <menuitem action='info'       lang='ej' />
+      <separator                    lang='ej' />
+      <menuitem action='new'        lang='ej' />
+      <menuitem action='open'       lang='ej' />
+      <menuitem action='save'       lang='ej' />
+      <menuitem action='saveas'     lang='ej' />
+      <separator                    lang='ej' />
+      <menuitem action='close'      lang='ej' />
+      <separator                    lang='ej' />
+      <menuitem action='exit'       lang='ej' />
+    </menu>
+    <menu action='edit'>
+      <menuitem action='undo'       lang='ej' />
+      <menuitem action='redo'       lang='ej' />
+      <separator                    lang='ej' />
+      <menuitem action='cut'        lang='ej' />
+      <menuitem action='copy'       lang='ej' />
+      <menuitem action='paste'      lang='ej' />
+      <separator                    lang='ej' />
+      <menuitem action='select_all' lang='ej' />
+      <separator                    lang='ej' />
+      <menuitem action='clear'      lang='ej' />
+    </menu>
+    <menu action='option'>
+      <menuitem action='drawspaces' lang='ej' />
+      <menuitem action='blockmatch' lang='ej' />
+      <separator                    lang=' j' />
+      <menuitem action='errorjp'    lang=' j' />
+    </menu>
+    <menu action='template'>
+      <menuitem action="gosu1"      lang='ej' />
+      <separator                    lang='ej' />
+      <menuitem action="dxruby1"    lang='ej' />
+      <menuitem action="dxruby2"    lang='ej' />
+      <separator                    lang='ej' />
+      <menuitem action="nyle1"      lang='ej' />
+      <menuitem action="nyle2"      lang='ej' />
+    </menu>
+    <menu action='help'>
+      <menuitem action='ref_ruby'   lang='ej' />
+      <separator                    lang='ej' />
+      <menuitem action='ref_gosu'   lang='ej' />
+      <menuitem action='ref_dxruby' lang='ej' />
+      <menuitem action='ref_nyle'   lang='ej' />
+      <separator                    lang='ej' />
+      <menuitem action='ref_rbpad'  lang='ej' />
+      <separator                    lang='ej' />
+      <menuitem action='ruby_ver'   lang='ej' />
+    </menu>
+  </menubar>
+<!--
+  <toolbar name='ToolBar'>
+    <toolitem action='exec'         lang='ej' />
+    <separator                      lang='ej' />
+  </toolbar>
+-->
+</ui>

@@ -1,0 +1,64 @@
+<?xml version='1.0'?>
+
+<messages>
+  <string id='frame_output'>
+    <jp> 実行結果 </jp>
+    <en> Output </en>
+  </string>
+  <string id='frame_input'>
+    <jp> キーボード入力 </jp>
+    <en> Input </en>
+  </string>
+  <string id='info_stat'>
+    <jp>状態　　　　</jp>
+    <en>Status      </en>
+  </string>
+  <string id='info_dir'>
+    <jp>ディレクトリ</jp>
+    <en>Directory   </en>
+  </string>
+  <string id='info_base'>
+    <jp>ファイル名　</jp>
+    <en>Filename    </en>
+  </string>
+  <string id='exec'>
+    <jp>プログラム実行</jp>
+    <en>Run script</en>
+  </string>
+  <string id='find'>
+    <jp>検索</jp>
+    <en>Find</en>
+  </string>
+  <string id='dialog_open'>
+    <jp>ファイルを開く</jp>
+    <en>Open</en>
+  </string>
+  <string id='dialog_saveas'>
+    <jp>名前を付けて保存</jp>
+    <en>Save as</en>
+  </string>
+  <string id='confirm_save'>
+    <jp>はまだ保存されていません。閉じる前に保存しますか？</jp>
+    <en>has not been saved yet. Do you save it before closeing?</en>
+  </string>
+  <string id='not_found'>
+    <jp>は見つかりません。</jp>
+    <en>not found.</en>
+  </string>
+  <string id='status_pos_l'>
+    <jp>行</jp>
+    <en>L </en>
+  </string>
+  <string id='status_pos_c'>
+    <jp>桁</jp>
+    <en>C </en>
+  </string>
+  <string id='status_saved'>
+    <jp></jp>
+    <en></en>
+  </string>
+  <string id='status_unsaved'>
+    <jp>(未保存)</jp>
+    <en>(UNSAVED)</en>
+  </string>
+</messages>
