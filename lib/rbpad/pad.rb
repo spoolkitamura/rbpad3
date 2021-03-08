@@ -376,9 +376,9 @@ module Rbpad
         dialog.current_folder = @last_dir
       else
         # desktop
-        if ENV.has_key?("HOME") and Dir.exists?(ENV["HOME"] + "/Desktop")
+        if ENV.has_key?("HOME") and Dir.exist?(ENV["HOME"] + "/Desktop")
           dialog.current_folder = ENV["HOME"] + "/Desktop"
-        elsif ENV.has_key?("USERPROFILE") and Dir.exists?(ENV["USERPROFILE"] + "/Desktop")
+        elsif ENV.has_key?("USERPROFILE") and Dir.exist?(ENV["USERPROFILE"] + "/Desktop")
           dialog.current_folder = ENV["USERPROFILE"] + "/Desktop"
         end
       end
@@ -461,9 +461,9 @@ module Rbpad
         dialog.current_folder = @last_dir
       else
         # desktop
-        if ENV.has_key?("HOME") and Dir.exists?(ENV["HOME"] + "/Desktop")
+        if ENV.has_key?("HOME") and Dir.exist?(ENV["HOME"] + "/Desktop")
           dialog.current_folder = ENV["HOME"] + "/Desktop"
-        elsif ENV.has_key?("USERPROFILE") and Dir.exists?(ENV["USERPROFILE"] + "/Desktop")
+        elsif ENV.has_key?("USERPROFILE") and Dir.exist?(ENV["USERPROFILE"] + "/Desktop")
           dialog.current_folder = ENV["USERPROFILE"] + "/Desktop"
         end
       end
